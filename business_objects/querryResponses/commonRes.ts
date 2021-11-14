@@ -1,0 +1,1 @@
+export const incorrectCreds = "Entered credentials are not correct";

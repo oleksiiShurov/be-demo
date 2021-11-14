@@ -1,0 +1,78 @@
+{
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "chakram": "^1.5.0",
+    "k6": "^0.0.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.7",
+    "@influxdata/influxdb-client": "^1.15.0",
+    "@jest/reporters": "^27.3.0",
+    "@shelf/jest-testrail-reporter": "^1.1.2",
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.13",
+    "@types/k6": "^0.34.3",
+    "@types/morgan": "^1.9.3",
+    "@types/supertest": "^2.0.11",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "gmail-api-parse-message": "^2.1.2",
+    "google-auth-library": "^7.10.2",
+    "googleapis": "^89.0.0",
+    "graphql": "^15.5.1",
+    "jest": "^27.0.6",
+    "jest-2-testrail": "^1.0.9",
+    "jest-html-reporter": "^3.4.1",
+    "jest-testrail-reporter": "^2.0.0",
+    "js-base64": "^3.7.2",
+    "mime": "^2.5.2",
+    "mime-types": "^2.1.31",
+    "morgan": "^1.10.0",
+    "node-testrail": "^0.0.12",
+    "nodemon": "^2.0.12",
+    "protractor": "^7.0.0",
+    "supertest": "^6.1.3",
+    "testrail-api": "^1.3.6",
+    "testrail-jest-reporter": "^1.1.2",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.1.0",
+    "uuid-generator-ts": "^1.1.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "google-api-auth": "ts-node ../BE-demo/utils/connectorsHelper/gmailIntegration/googleApiAuth",
+    "mail-list": "ts-node ../BE-demo/utils/connectorsHelper/gmailIntegration/googleMailData"
+  },
+  "jest-html-reporter": {
+    "pageTitle": "Unit Tests",
+    "outputPath": "test-report/test-report.html",
+    "includeFailureMsg": true
+  },
+  "jest-2-testrail": {
+    "project_id": "4",
+    "suite_id": "9"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testTimeout": 80000,
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/tests/*/*.+(ts|tsx|js)"
+    ],
+    "reporters": [
+      "default"
+    ]
+  }
+}
