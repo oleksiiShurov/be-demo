@@ -37,7 +37,9 @@
     "testrail-jest-reporter": "^1.1.2",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.1.0",
-    "uuid-generator-ts": "^1.1.0"
+    "uuid-generator-ts": "^1.1.0",
+    "prisma": "^3.6.0",
+
   },
   "scripts": {
     "test": "jest",
