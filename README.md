@@ -26,6 +26,9 @@ Const list of response texts
 #### Business objects.authFlowObject.ts:
 Object to parse .json files to variables 
 
+#### DB connector:
+List of db connector functions (Prisma is used)
+
 #### k6 load tool folder:
 To launch
 ```console
